@@ -78,7 +78,11 @@ if (loader) {
   }, 700);
 }
 
-// Scroll reveal
+// Scroll reveal — threshold is a fraction of the target's own height, so a
+// tall single-wrapped container (a full blog article body, for example) can
+// need more simultaneous on-screen height than a mobile viewport can ever
+// show, permanently failing to reveal. Trigger on first pixel instead so it
+// works regardless of element height.
 const revealEls = document.querySelectorAll(".reveal");
 
 const revealObserver = new IntersectionObserver(
@@ -90,7 +94,7 @@ const revealObserver = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.15 }
+  { threshold: 0, rootMargin: "0px 0px -80px 0px" }
 );
 
 revealEls.forEach((el) => revealObserver.observe(el));
