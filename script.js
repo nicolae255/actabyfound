@@ -192,38 +192,6 @@ if (window.matchMedia("(hover: hover)").matches) {
   });
 })();
 
-// Newsletter form (footer, every page) — submits via Web3Forms.
-document.querySelectorAll(".newsletter-form").forEach((form) => {
-  const note =
-    form.nextElementSibling && form.nextElementSibling.classList.contains("newsletter-note")
-      ? form.nextElementSibling
-      : null;
-
-  form.addEventListener("submit", async (e) => {
-    e.preventDefault();
-    const btn = form.querySelector("button");
-    const originalText = btn.textContent;
-    btn.disabled = true;
-    btn.textContent = "...";
-    try {
-      const res = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        headers: { Accept: "application/json" },
-        body: new FormData(form),
-      });
-      const data = await res.json();
-      if (!res.ok || !data.success) throw new Error("Request failed");
-      form.reset();
-      if (note) note.textContent = note.dataset.success || "You're on the list — thanks for subscribing.";
-    } catch (err) {
-      if (note) note.textContent = note.dataset.error || "Something went wrong. Please try again.";
-    } finally {
-      btn.disabled = false;
-      btn.textContent = originalText;
-    }
-  });
-});
-
 // Main contact forms (Contact page + homepage embedded form) — submits via
 // Web3Forms instead of a mailto fallback (access_key lives in each form's
 // hidden field — set to Acta's own Web3Forms key before launch).
