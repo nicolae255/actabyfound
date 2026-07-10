@@ -1003,6 +1003,13 @@ body.cursor-ready .cursor-dot {
   gap: 1.5rem;
 }
 
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
 .compare-col {
   box-sizing: border-box;
   border-radius: var(--radius-md);
