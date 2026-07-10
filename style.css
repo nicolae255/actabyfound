@@ -621,8 +621,8 @@ body.cursor-ready .cursor-dot {
 /* ===== Scroll reveal ===== */
 .reveal {
   opacity: 0;
-  transform: translateY(28px) scale(0.98);
-  transition: opacity 0.9s var(--ease), transform 0.9s var(--ease);
+  transform: translateY(16px) scale(0.99);
+  transition: opacity 0.45s var(--ease), transform 0.45s var(--ease);
   will-change: opacity, transform;
 }
 
