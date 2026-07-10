@@ -1,0 +1,30 @@
+name: Ping IndexNow
+
+# Notifies Bing (and other IndexNow-participating engines) whenever pages
+# change, using the key already hosted at /be48505f85394bd99624bcf7cbbc9501.txt.
+# Google does not participate in IndexNow; this only speeds up Bing/Yandex/Seznam.
+# Runs independently of the GitHub Pages deploy, it only calls IndexNow's API.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "**/*.html"
+      - "sitemap.xml"
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Submit sitemap URLs to IndexNow
+        run: |
+          KEY="be48505f85394bd99624bcf7cbbc9501"
+          HOST="actabyfound.be"
+          URLS=$(grep -oE '<loc>[^<]+</loc>' sitemap.xml | sed 's/<loc>//;s/<\/loc>//' | jq -R . | jq -s .)
+          BODY=$(jq -n --arg host "$HOST" --arg key "$KEY" --argjson urlList "$URLS" \
+            '{host: $host, key: $key, keyLocation: ("https://" + $host + "/" + $key + ".txt"), urlList: $urlList}')
+          curl -s -X POST "https://api.indexnow.org/indexnow" \
+            -H "Content-Type: application/json; charset=utf-8" \
+            -d "$BODY"
