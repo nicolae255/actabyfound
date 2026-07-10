@@ -1662,6 +1662,47 @@ body.cursor-ready .cursor-dot {
   }
 }
 
+@media (max-width: 700px) {
+  /* .process-flow ("Three steps") had no mobile breakpoint at all — it stayed
+     a 3-column grid and just overflowed sideways. Restyle each step as an
+     icon-left/text-right row instead of a plain 1-column stack of the
+     existing vertical card layout, so it reads as a proper stepper rather
+     than three cards squeezed into one narrow column. */
+  .process-flow {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .process-flow::before {
+    display: none;
+  }
+
+  .process-step {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    column-gap: 1rem;
+    row-gap: 0.4rem;
+    align-items: start;
+    padding: 1.5rem 1.25rem;
+  }
+
+  .process-step-num {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    margin-bottom: 0;
+  }
+
+  .process-step strong {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .process-step p {
+    grid-column: 2;
+    grid-row: 2;
+  }
+}
+
 @media (max-width: 600px) {
   section {
     padding: 3.75rem 1.25rem;
