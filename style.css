@@ -1847,7 +1847,10 @@ body.cursor-ready .cursor-dot {
 
 .blog-card {
   display: block;
-  padding: 1.85rem;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
   transition: transform 0.4s var(--ease), border-color 0.4s var(--ease);
 }
 
@@ -1856,14 +1859,43 @@ body.cursor-ready .cursor-dot {
   border-color: var(--border-strong);
 }
 
-.blog-card-meta {
+.blog-thumb {
+  height: 170px;
+  background: linear-gradient(135deg, rgba(52, 211, 153, 0.25), rgba(214, 255, 74, 0.15));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.blog-thumb span {
   font-family: var(--font-display);
-  font-size: 0.75rem;
+  font-weight: 800;
+  font-size: 1.7rem;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.blog-card-body {
+  padding: 1.5rem 1.5rem 1.75rem;
+}
+
+.blog-tag {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--border);
+  padding: 0.3rem 0.7rem;
+  border-radius: var(--radius-full);
+  font-family: var(--font-display);
+  font-size: 0.7rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: var(--lime);
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
 }
 
 .blog-card h3 {
@@ -1872,8 +1904,13 @@ body.cursor-ready .cursor-dot {
 }
 
 .blog-card p {
-  font-size: 0.92rem;
-  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  margin-bottom: 1.1rem;
+}
+
+.blog-meta {
+  font-size: 0.78rem;
+  color: var(--faint);
 }
 
 .post-meta {
