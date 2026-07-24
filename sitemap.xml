@@ -88,21 +88,112 @@
 
   <url>
     <loc>https://actabyfound.be/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://actabyfound.be/blog/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://actabyfound.be/fr/blog/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://actabyfound.be/nl/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://actabyfound.be/blog/"/>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://actabyfound.be/fr/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://actabyfound.be/blog/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://actabyfound.be/fr/blog/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://actabyfound.be/nl/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://actabyfound.be/blog/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://actabyfound.be/nl/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://actabyfound.be/blog/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://actabyfound.be/fr/blog/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://actabyfound.be/nl/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://actabyfound.be/blog/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
     <loc>https://actabyfound.be/blog/website-rules-for-belgian-lawyers-and-notaries/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://actabyfound.be/blog/website-rules-for-belgian-lawyers-and-notaries/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://actabyfound.be/fr/blog/regles-site-internet-avocats-notaires/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://actabyfound.be/nl/blog/regels-website-advocaten-notarissen-belgie/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://actabyfound.be/blog/website-rules-for-belgian-lawyers-and-notaries/"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+  <url>
+    <loc>https://actabyfound.be/fr/blog/regles-site-internet-avocats-notaires/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://actabyfound.be/blog/website-rules-for-belgian-lawyers-and-notaries/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://actabyfound.be/fr/blog/regles-site-internet-avocats-notaires/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://actabyfound.be/nl/blog/regels-website-advocaten-notarissen-belgie/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://actabyfound.be/blog/website-rules-for-belgian-lawyers-and-notaries/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://actabyfound.be/nl/blog/regels-website-advocaten-notarissen-belgie/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://actabyfound.be/blog/website-rules-for-belgian-lawyers-and-notaries/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://actabyfound.be/fr/blog/regles-site-internet-avocats-notaires/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://actabyfound.be/nl/blog/regels-website-advocaten-notarissen-belgie/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://actabyfound.be/blog/website-rules-for-belgian-lawyers-and-notaries/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
   <url>
     <loc>https://actabyfound.be/blog/law-firm-website-cost-belgium/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://actabyfound.be/blog/law-firm-website-cost-belgium/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://actabyfound.be/fr/blog/cout-site-internet-cabinet-avocat-belgique/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://actabyfound.be/nl/blog/kostprijs-website-advocatenkantoor-belgie/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://actabyfound.be/blog/law-firm-website-cost-belgium/"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://actabyfound.be/fr/blog/cout-site-internet-cabinet-avocat-belgique/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://actabyfound.be/blog/law-firm-website-cost-belgium/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://actabyfound.be/fr/blog/cout-site-internet-cabinet-avocat-belgique/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://actabyfound.be/nl/blog/kostprijs-website-advocatenkantoor-belgie/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://actabyfound.be/blog/law-firm-website-cost-belgium/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://actabyfound.be/nl/blog/kostprijs-website-advocatenkantoor-belgie/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://actabyfound.be/blog/law-firm-website-cost-belgium/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://actabyfound.be/fr/blog/cout-site-internet-cabinet-avocat-belgique/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://actabyfound.be/nl/blog/kostprijs-website-advocatenkantoor-belgie/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://actabyfound.be/blog/law-firm-website-cost-belgium/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
     <loc>https://actabyfound.be/blog/google-business-profile-notaries-belgium/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://actabyfound.be/blog/google-business-profile-notaries-belgium/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://actabyfound.be/fr/blog/fiche-google-business-notaires-belgique/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://actabyfound.be/nl/blog/google-bedrijfsprofiel-notarissen-belgie/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://actabyfound.be/blog/google-business-profile-notaries-belgium/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://actabyfound.be/fr/blog/fiche-google-business-notaires-belgique/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://actabyfound.be/blog/google-business-profile-notaries-belgium/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://actabyfound.be/fr/blog/fiche-google-business-notaires-belgique/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://actabyfound.be/nl/blog/google-bedrijfsprofiel-notarissen-belgie/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://actabyfound.be/blog/google-business-profile-notaries-belgium/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://actabyfound.be/nl/blog/google-bedrijfsprofiel-notarissen-belgie/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://actabyfound.be/blog/google-business-profile-notaries-belgium/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://actabyfound.be/fr/blog/fiche-google-business-notaires-belgique/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://actabyfound.be/nl/blog/google-bedrijfsprofiel-notarissen-belgie/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://actabyfound.be/blog/google-business-profile-notaries-belgium/"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
