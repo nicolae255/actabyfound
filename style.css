@@ -1839,6 +1839,11 @@ body.cursor-ready .cursor-dot {
   line-height: 1.6;
 }
 
+.faq-item p a {
+  color: var(--emerald);
+  text-decoration: underline;
+}
+
 /* ===== Blog ===== */
 .blog-grid {
   display: grid;
